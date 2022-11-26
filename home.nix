@@ -28,9 +28,18 @@
     firefox
     discord
     thunderbird
-    git
   ];
 
-  # Config files
+  # Git configuration
+  programs.git = {
+    enable = true;
+    userName = "SebastianEsp";
+    userEmail = "sebastianesp@hotmail.com";
+    aliases = {
+      st = "status";
+    };
+  };
+
+  # Raw configuration files
   home.file.".vimrc".source = ./vimrc;
 }
