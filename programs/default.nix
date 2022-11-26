@@ -1,11 +1,9 @@
 let 
-  more = { pkgs, ... }:{
-    programs = {
-    
-    };
-  };
-in 
+  more = {...}:
+  {};
+in
 [
+  ./fzf
   ./kitty
   ./git
   ./nvim
