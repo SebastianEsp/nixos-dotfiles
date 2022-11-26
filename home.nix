@@ -2,11 +2,8 @@
 
 {
   # Imports
-  imports = [
-    ./programs/kitty/kitty.nix
-    ./programs/git/git.nix
-    ./programs/zsh/zsh.nix
-    ./programs/nvim/nvim.nix
+  imports = builtins.concatMap import [
+    ./programs
   ];
 
   # Home Manager needs a bit of information about you and the
