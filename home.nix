@@ -1,6 +1,12 @@
 { config, pkgs, ... }:
 
 {
+  # Imports
+  imports = [
+    ./programs/kitty/kitty.nix
+    ./programs/git/git.nix
+  ];
+
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "sebastian";
@@ -19,6 +25,9 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
+  # Fonts enabled
+  fonts.fontconfig.enable = true;
+
   # NVIM configuration
   programs.neovim.enable = true;
   programs.neovim.viAlias = true;
@@ -30,27 +39,10 @@
     spotify
     thunderbird
     vscode
+    (pkgs.nerdfonts.override { fonts = [ "FiraCode" "SpaceMono" ]; })
   ];
 
-  # Git configuration
-  programs.git = {
-    enable = true;
-    userName = "SebastianEsp";
-    userEmail = "sebastianesp@hotmail.com";
-    aliases = {
-      st = "status";
-    };
-  };
-
-  # kitty configuration
-  programs.kitty = {
-    enable = true;
-    settings = {
-      font_family      = "SpaceMono";
-    };
-    theme = "Doom One";
-  }; 
-
+  
   # zsh configuration
   programs.zsh = {
     enable = true;
