@@ -21,7 +21,16 @@
 	  rev = "v1.16.1";
 	  sha256 = "0fkfh8j7rd8mkpgz6nsx4v7665d375266shl1aasdad8blgqmf0c";
         };
-      }  
+      }
+      {
+        name = "zsh-syntax-highlighting";
+	src = pkgs.fetchFromGitHub {
+          owner = "zsh-users";
+	  repo = "zsh-syntax-highlighting";
+	  rev = "0.7.1";
+	  sha256 = "03r6hpb5fy4yaakqm3lbf4xcvd408r44jgpv4lnzl9asp4sb9qc0";
+	};
+      }
     ];
   };
 
