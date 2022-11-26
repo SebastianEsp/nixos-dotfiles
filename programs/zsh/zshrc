@@ -1,5 +1,6 @@
 source ~/.zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.p10k.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-ZSH_THEME="powerline10k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
