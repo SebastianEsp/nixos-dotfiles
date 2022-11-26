@@ -6,6 +6,7 @@
     ./programs/kitty/kitty.nix
     ./programs/git/git.nix
     ./programs/zsh/zsh.nix
+    ./programs/nvim/nvim.nix
   ];
 
   # Home Manager needs a bit of information about you and the
@@ -28,11 +29,6 @@
 
   # Fonts enabled
   fonts.fontconfig.enable = true;
-
-  # NVIM configuration
-  programs.neovim.enable = true;
-  programs.neovim.viAlias = true;
-  programs.neovim.vimAlias = true;
  
   home.packages = with pkgs; [
     firefox
@@ -41,8 +37,5 @@
     thunderbird
     vscode
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "SpaceMono" ]; })
-  ];
-  
-  # Raw configuration files
-  home.file.".vimrc".source = ./vimrc;
+  ];  
 }
