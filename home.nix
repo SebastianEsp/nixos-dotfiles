@@ -27,6 +27,7 @@
   home.packages = with pkgs; [
     firefox
     discord
+    spotify
     thunderbird
     vscode
   ];
@@ -68,4 +69,5 @@
   # Raw configuration files
   home.file.".vimrc".source = ./vimrc;
   home.file.".zshrc".source = ./zshrc;
+  home.file.".p10k.zsh".source = ./p10k.zsh;
 }
