@@ -42,6 +42,15 @@
     };
   };
 
+  # kitty configuration
+  programs.kitty = {
+    enable = true;
+    settings = {
+      font_family      = "SpaceMono";
+    };
+    theme = "Doom One";
+  }; 
+
   # zsh configuration
   programs.zsh = {
     enable = true;
