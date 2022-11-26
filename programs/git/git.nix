@@ -9,6 +9,7 @@
     aliases = {
       st = "status";
       cm = "commit -m";
+      pu = "push";
     };
   }; 
 }
