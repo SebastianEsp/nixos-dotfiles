@@ -8,6 +8,7 @@
     userEmail = "sebastianesp@hotmail.com";
     aliases = {
       st = "status";
+      cm = "commit -m";
     };
   }; 
 }
