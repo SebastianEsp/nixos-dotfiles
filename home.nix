@@ -31,8 +31,19 @@
     firefox
     discord
     spotify
+    spotifywm
     thunderbird
     vscode
+    gnumake
+    libreoffice-qt
+    mpv
+    unzip
+    autoconf
+    automake
+    libtool
+    gnum4
+    gcc
+    easyeffects
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" "SpaceMono" ]; })
   ];  
 }

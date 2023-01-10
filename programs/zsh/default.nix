@@ -31,6 +31,15 @@
 	  sha256 = "03r6hpb5fy4yaakqm3lbf4xcvd408r44jgpv4lnzl9asp4sb9qc0";
 	};
       }
+      {
+        name = "zsh-history-substring-search";
+	src = pkgs.fetchFromGitHub {
+          owner = "zsh-users";
+	  repo = "zsh-history-substring-search";
+	  rev = "v1.0.2";
+	  sha256 = "0y8va5kc2ram38hbk2cibkk64ffrabfv1sh4xm7pjspsba9n5p1y";
+	};
+      }
     ];
   };
 
