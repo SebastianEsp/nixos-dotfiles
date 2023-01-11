@@ -6,6 +6,9 @@
     enable = true;
     userName = "SebastianEsp";
     userEmail = "sebastianesp@hotmail.com";
+    extraConfig = {
+      core.editor = "vim";
+    };
     aliases = {
       st = "status";
       cm = "commit -m";
