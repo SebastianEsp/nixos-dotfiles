@@ -8,4 +8,5 @@ in
   ./git
   ./nvim
   ./zsh
+  ./direnv
 ]
