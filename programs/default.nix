@@ -4,7 +4,7 @@ let
 in
 [
   ./fzf
-  ./kitty
+  #./kitty
   ./git
   ./nvim
   ./zsh

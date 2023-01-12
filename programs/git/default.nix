@@ -5,7 +5,7 @@
   programs.git = {
     enable = true;
     userName = "SebastianEsp";
-    userEmail = "sebastianesp@hotmail.com";
+    userEmail = "sebnie@digst.dk";
     aliases = {
       st = "status";
       cm = "commit -m";

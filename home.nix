@@ -3,7 +3,7 @@
 {
   # Imports
   imports = builtins.concatMap import [
-    #./programs
+    ./programs
   ];
 
   # Home Manager needs a bit of information about you and the
@@ -25,10 +25,11 @@
   programs.home-manager.enable = true;
 
   # Fonts enabled
-  #fonts.fontconfig.enable = true;
- 
+  fonts.fontconfig.enable = true;
+
   home.packages = with pkgs; [
     yq
-    jq    
-  ];  
+    jq
+    (pkgs.nerdfonts.override { fonts = [ "FiraCode" "SpaceMono" ]; })
+];  
 }
