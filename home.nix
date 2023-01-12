@@ -28,6 +28,7 @@
   fonts.fontconfig.enable = true;
  
   home.packages = with pkgs; [
+    protonvpn-gui
     firefox
     discord
     spotify
